@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3</title>
+    <link rel="stylesheet" href="./D3_files/app.css">
+    <!--For d3 tooltip style-->
+    <link rel="stylesheet" href="./D3_files/example-styles.css">
+    <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <!-- <script src="d3.v5.js"></script> -->
+    <script src="./D3_files/d3.v5.min.js"></script>
+    <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
+    <script src="./D3_files/d3-tip.js"></script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+        <div id="intro" class="outer-margin">
+                <h2 class="title">How Many People Apply to Come to the U.S.A - 3rd Quarter 2018</h2>
+                <p>The United States of America welcomes tens of thousands of people from around the world
+                    to visit, live and work in the U.S.  The following graph visualization
+                    shows all <span>forms</span> received and processed 
+                    by the <a href="https://www.uscis.gov/tools/reports-studies/immigration-forms-data?topic_id=23035&amp;field_native_doc_issue_date_value%5Bvalue%5D%5Bmonth%5D=&amp;field_native_doc_issue_date_value_1%5Bvalue%5D%5Byear%5D=2018&amp;combined=&amp;items_per_page=10">USCIS</a> 
+                    in the 3rd Quarter 2018.  Additionally the visualizationss dig deeper 
+                    and show how many applications where <strong>approved</strong>, <strong>denied</strong>,
+                    <strong>pending</strong> and the type of each application.
+                </p>
+            </div>  
+    
+    <div class="canva">
+       
+    <svg width="1000" height="1000"><g width="255" height="255" transform="translate(70,
+                    180)"><circle cx="470.58463949355763" cy="344.57393801553246" r="12.543268992274374" style="fill: rgb(102, 194, 165);"></circle><circle cx="536.8901991802364" cy="322.91312799164683" r="54.21071457477722" style="fill: rgb(102, 194, 165);"></circle><circle cx="543.080491802888" cy="408.76664441436236" r="28.865685319742774" style="fill: rgb(102, 194, 165);"></circle><circle cx="587.1479495191294" cy="367.73462352970284" r="10.130270409988224" style="fill: rgb(102, 194, 165);"></circle><circle cx="596.217245134204" cy="284.6857108989585" r="13.365725788554377" style="fill: rgb(102, 194, 165);"></circle><circle cx="527.0188144871661" cy="246.8165099971572" r="19.523499325084657" style="fill: rgb(102, 194, 165);"></circle><circle cx="498.7939308451598" cy="378.74985562642416" r="10.38415345773359" style="fill: rgb(102, 194, 165);"></circle><circle cx="336.3222353643027" cy="422.1181734193879" r="30.140426776254465" style="fill: rgb(252, 141, 98);"></circle><circle cx="264.54654795928417" cy="460.2888545204248" r="16.12093386351828" style="fill: rgb(252, 141, 98);"></circle><circle cx="219.85731321977602" cy="539.6679600540823" r="17.394565691324793" style="fill: rgb(252, 141, 98);"></circle><circle cx="246.27694588532998" cy="613.2676430050151" r="10.635151470845486" style="fill: rgb(252, 141, 98);"></circle><circle cx="334.76572657516687" cy="550.2491441443738" r="95" style="fill: rgb(252, 141, 98);"></circle><circle cx="341.0047563927643" cy="658.2604016500154" r="10.191299988773167" style="fill: rgb(252, 141, 98);"></circle><circle cx="440.81609778809434" cy="529.0689655752938" r="10.076564380657477" style="fill: rgb(252, 141, 98);"></circle><circle cx="95.02281698424999" cy="314.6289123761511" r="11.599196889906557" style="fill: rgb(141, 160, 203);"></circle><circle cx="52.11556337570238" cy="270.75056901712884" r="15.756087945254837" style="fill: rgb(141, 160, 203);"></circle><circle cx="52.47836060474997" cy="299.504360090743" r="10" style="fill: rgb(141, 160, 203);"></circle><circle cx="78.45482560469333" cy="290.854421608869" r="14.378816796384438" style="fill: rgb(141, 160, 203);"></circle><circle cx="98.93944357322725" cy="263.0027204096953" r="17.19483252439225" style="fill: rgb(141, 160, 203);"></circle><circle cx="49.0454007525046" cy="241.24059993562233" r="10.00288503463347" style="fill: rgb(141, 160, 203);"></circle><circle cx="71.58018385626356" cy="248.6267000067311" r="10.711493925761923" style="fill: rgb(141, 160, 203);"></circle><circle cx="68.93653288198027" cy="225.0154750983072" r="10.047270182840702" style="fill: rgb(141, 160, 203);"></circle><circle cx="99.57943382155378" cy="210.3976818336391" r="12.11939082689531" style="fill: rgb(141, 160, 203);"></circle><circle cx="143.0940491354729" cy="257.79768036799175" r="16.552801355574644" style="fill: rgb(141, 160, 203);"></circle><circle cx="118.38570448019647" cy="233.7920175893545" r="14.896791475962832" style="fill: rgb(141, 160, 203);"></circle><circle cx="145.77366375501347" cy="228.3374318878563" r="10.029072272075737" style="fill: rgb(141, 160, 203);"></circle><circle cx="127.84022009075977" cy="283.773892679443" r="10.571014931686035" style="fill: rgb(141, 160, 203);"></circle><circle cx="90.3495773130592" cy="233.90992561527614" r="10.139591291111744" style="fill: rgb(141, 160, 203);"></circle><circle cx="125.08680554817427" cy="310.4932405576289" r="13.28982718512001" style="fill: rgb(141, 160, 203);"></circle><circle cx="105.85573268865419" cy="292.4661114351842" r="10.069462756944317" style="fill: rgb(141, 160, 203);"></circle><circle cx="211.61381863818872" cy="133.59178975245933" r="10" style="fill: rgb(231, 138, 195);"></circle><circle cx="89.43678124896793" cy="117.19889279237609" r="10.240123651801124" style="fill: rgb(231, 138, 195);"></circle><circle cx="150.5489140930953" cy="176.30265532937983" r="10.237238617167653" style="fill: rgb(231, 138, 195);"></circle><circle cx="152.2594473432116" cy="113.39081529799729" r="49.697854630806944" style="fill: rgb(231, 138, 195);"></circle><circle cx="188.25791244537686" cy="164.7316619672278" r="10.005991995007976" style="fill: rgb(231, 138, 195);"></circle><circle cx="110.72801960645823" cy="161.84764641106216" r="11.121612695196744" style="fill: rgb(231, 138, 195);"></circle><circle cx="91.95598198573947" cy="88.1744210209706" r="12.665550075585296" style="fill: rgb(231, 138, 195);"></circle><circle cx="136.76615349096173" cy="52.63738896052971" r="10" style="fill: rgb(231, 138, 195);"></circle><circle cx="209.7031139891478" cy="87.87663545842226" r="10.1571234246536" style="fill: rgb(231, 138, 195);"></circle><circle cx="382.0591695980899" cy="104.89692142692078" r="47.05982334711014" style="fill: rgb(166, 216, 84);"></circle><circle cx="337.89360512798834" cy="146.05029591735888" r="10.307367151335079" style="fill: rgb(166, 216, 84);"></circle><circle cx="360.1026853436556" cy="164.9571075222192" r="13.887917057212455" style="fill: rgb(166, 216, 84);"></circle><circle cx="301.3877491394434" cy="113.17515297560412" r="31.035231364112256" style="fill: rgb(166, 216, 84);"></circle><circle cx="387.9006703077064" cy="164.6789040378029" r="10.006879697972122" style="fill: rgb(166, 216, 84);"></circle><circle cx="331.8150067048575" cy="68.23951050971085" r="12.135369480249915" style="fill: rgb(166, 216, 84);"></circle><circle cx="355.9468630806734" cy="48.5141041786568" r="12.076115307393259" style="fill: rgb(166, 216, 84);"></circle><circle cx="389.8306568259317" cy="33.59450826573965" r="21.66486080034255" style="fill: rgb(166, 216, 84);"></circle><circle cx="426.02630033722306" cy="63.08561193487824" r="10.613846599706015" style="fill: rgb(166, 216, 84);"></circle><circle cx="414.90589530726476" cy="160.3026902581516" r="14.350632227272847" style="fill: rgb(166, 216, 84);"></circle></g><g transform="translate(610, 30)"><g class="legendCells" transform="translate(10,16.0966796875)"><g class="cell" transform="translate(0, 0)"><circle class="swatch" r="10" style="fill: rgb(102, 194, 165);"></circle><text class="label" transform="translate( 20, 5)" fill="white">Family Based</text></g><g class="cell" transform="translate(0, 24)"><circle class="swatch" r="10" style="fill: rgb(252, 141, 98);"></circle><text class="label" transform="translate( 20, 5)" fill="white">Employment Based</text></g><g class="cell" transform="translate(0, 48)"><circle class="swatch" r="10" style="fill: rgb(141, 160, 203);"></circle><text class="label" transform="translate( 20, 5)" fill="white">Humanitarian</text></g><g class="cell" transform="translate(0, 72)"><circle class="swatch" r="10" style="fill: rgb(231, 138, 195);"></circle><text class="label" transform="translate( 20, 5)" fill="white">Citizenship and Nationality</text></g><g class="cell" transform="translate(0, 96)"><circle class="swatch" r="10" style="fill: rgb(166, 216, 84);"></circle><text class="label" transform="translate( 20, 5)" fill="white">Other</text></g></g><text class="legendTitle" fill="white">Color Legend</text></g><g class="scale-legend" transform="translate(155, 30)"><g class="legendCells" transform="translate(10,16.0966796875)" fill="#8da0cb"><g class="cell" transform="translate(0, 7.5)"><circle class="swatch" r="10"></circle><text class="label" transform="translate( -10,
+              35)" style="text-anchor: start;" fill="white"><tspan x="0" dy="0em">Less</tspan><tspan x="0" dy="1.2em">Applications</tspan><tspan x="0" dy="1.2em">Received</tspan></text></g><g class="cell" transform="translate(32, 7.5)"><circle class="swatch" r="11.25"></circle><text class="label" transform="translate( -11.25,
+              35)" style="text-anchor: start;" fill="white"><tspan x="0" dy="0em"></tspan></text></g><g class="cell" transform="translate(66.5, 7.5)"><circle class="swatch" r="12.5"></circle><text class="label" transform="translate( -12.5,
+              35)" style="text-anchor: start;" fill="white"><tspan x="0" dy="0em"></tspan></text></g><g class="cell" transform="translate(103.5, 7.5)"><circle class="swatch" r="13.75"></circle><text class="label" transform="translate( -13.75,
+              35)" style="text-anchor: start;" fill="white"><tspan x="0" dy="0em"></tspan></text></g><g class="cell" transform="translate(143, 7.5)"><circle class="swatch" r="15"></circle><text class="label" transform="translate( -15,
+              35)" style="text-anchor: start;" fill="white"><tspan x="0" dy="0em">More</tspan><tspan x="0" dy="1.2em">Applications</tspan><tspan x="0" dy="1.2em">Received</tspan></text></g></g><text class="legendTitle" fill="white">Size Legend</text></g></svg></div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script src="./D3_files/d3-legend.min.js"></script>
+<script src="./D3_files/immigration.js"></script><div class="d3-tip e" style="position: absolute; top: 311.991px; opacity: 0; pointer-events: none; box-sizing: border-box; left: 504.119px;"><div id="thumbnail"><h3> Form: I-90</h3></div>Pending: <span style="color:orange">564,658</span><p>Denied: <span style="color:orangered">13,241</span> </p><p>Approved: <span style="color:orange">211,343</span> </p><p>Total Received: <span style="color:orange">166,992</span> </p><p>Description: <span style="color:orange">Renew/Replace Permanent Resident Cards</span> </p><p>Base Type: <span style="color:orange">Other</span> </p></div>
+<!-- <script src="/lessons-files/imm-form-test.js"></script> -->
+<!-- <script src="app.js"></script> -->
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
